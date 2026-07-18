@@ -9,6 +9,13 @@ similar in spirit to a **Masso Touch Panel** or a **Centroid AcornSix Touch
 Screen** — a single-purpose appliance for running your machine, not a general
 Windows PC.
 
+> [!IMPORTANT]
+> **This is a ncSenderPro appliance.** The OS bundles ncSenderPro and
+> requires a **ncSenderPro license** to activate. If you don't already own
+> ncSenderPro, get it here first: <https://www.franciscreation.com/ncsender-pro>.
+> If you're using the free community version of ncSender, this OS isn't for
+> you — try the community app on your existing Windows setup instead.
+
 > [!CAUTION]
 > **This will erase everything on the gControl Panel's internal SSD** — the
 > Windows installation, the gSender application, all saved jobs, all
@@ -155,9 +162,17 @@ of the machine on your workbench, not the operating system.
 - No Microsoft account to sign in to, no antivirus subscription to renew,
   no "your license has expired" pop-ups.
 
-### Free and open
+### Included with your ncSenderPro license
 
-- The OS itself is **free** — no subscription, no per-panel license.
+- **ncSenderOS is for ncSenderPro users.** The ISO bundles ncSenderPro
+  and requires an ncSenderPro license to run — same license you'd need
+  to run ncSenderPro on Windows. If you're already a ncSenderPro user,
+  this OS is provided at no extra cost.
+- **No additional subscription, no per-panel fee, no cloud tier.** Your
+  existing ncSenderPro license activates on the panel once it boots.
+- If you're on the free community version of ncSender, this OS isn't
+  the right fit — see the [Before you install](#before-you-install)
+  section for how to evaluate ncSenderPro before committing.
 - Built on standard Debian (a well-known Linux distribution used by
   millions of people), so nothing here is a mystery black box you're
   stuck depending on. If you ever want to peek under the hood or
