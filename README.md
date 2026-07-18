@@ -61,13 +61,124 @@ Windows first and try it there. You lose nothing by doing so.
 
 ---
 
-## What ncSenderOS does
+## Why choose ncSenderOS over the stock Windows setup
+
+The gControl Panel with stock Windows + gSender is a general-purpose PC that
+happens to be running a CNC controller. ncSenderOS turns it into a
+**dedicated CNC control appliance** — every design decision is made in favor
+of the machine on your workbench, not the operating system.
+
+### Real screen space, all of it
+
+- **Full-screen kiosk** — no desktop, no taskbar, no window title bar, no
+  Windows notifications sliding in mid-job. The full display is your
+  controller UI.
+- **Touch-friendly virtual keyboard** — pops up when you need to type
+  (filenames, coordinates, WiFi passwords), goes away when you don't.
+  Sized and positioned for touch, not laptop typing.
+
+### Rotate the panel any way you want
+
+- **Full screen-rotation support** — landscape, portrait (either side), or
+  upside-down. Configured at the OS level, so the touchscreen coordinates
+  stay correct after rotation (no more calibrating an X where you touched Y).
+- Mount the panel over your machine, next to it, or on a swing arm — the
+  OS adapts to how you have it physically installed.
+
+### Boot straight to work
+
+- **Under 30 seconds** from power button to ncSenderPro ready to jog — no
+  login, no lockscreen, no desktop, no "Getting Windows ready" screens, no
+  "please wait while we update your drivers".
+- No user accounts to manage, no password prompts between the shop floor
+  and the controller UI.
+
+### No interruptions
+
+- **No Windows Update rebooting your machine mid-job.** No background
+  scanning, no telemetry, no Cortana, no Edge auto-updates, no OneDrive
+  syncing, no antivirus fighting for CPU while you're cutting a pocket.
+- **Sleep, suspend, and hibernate are disabled** — the panel stays on and
+  responsive as long as it has power. Long jobs won't wake up to find the
+  panel dozing.
+- **WiFi power-saving disabled** — no dropped connections during long jobs
+  or while jogging manually.
+- **No background processes** competing for real-time attention while your
+  spindle is spinning. Jog input goes from the touchscreen to the motor
+  driver without a queue of Windows services in the way.
+
+### Rock-solid serial connection to your controller
+
+- Linux's kernel drivers for **CH340, CP210x, and FTDI** USB-to-serial
+  adapters (the chips on virtually every GRBL, FluidNC, and grblHAL board)
+  are built into the kernel and don't get replaced by an update overnight.
+  No "the driver Windows installed today broke my controller" surprises.
+- USB device permissions are configured once at build time, not managed by
+  a driver installer that might reset itself.
+
+### Lightweight and reliable
+
+- Debian Linux runs comfortably on an N100 with 4 GB RAM. Windows with its
+  background load leaves the panel feeling sluggish; ncSenderOS leaves the
+  CPU and RAM available for the controller and your G-code preview.
+- **Same state every boot** — no drift, no "why is it acting weird today?"
+  The OS behaves the same on day 1000 as it did on day 1.
+- **No accumulated Windows cruft** — no ballooning WinSxS store, no
+  fragmented registry, no "Windows.old" folders eating disk after a
+  feature update.
+- **Longer SSD life** — no background indexing, no defrag, no swap thrash
+  from Windows' memory manager. The dedicated ncSenderOS install writes far
+  fewer bytes per day than a Windows PC.
+
+### Practical extras
+
+- **USB drives auto-mount** — plug in a thumb drive with G-code, it shows
+  up immediately in ncSenderPro's file picker. No "please select this drive"
+  or "Windows detected new hardware" dialog blocking the screen.
+- **Samba file share** — copy G-code files to the panel over your workshop
+  network from your desktop / laptop, no USB shuffle required.
+- **SSH access** — for advanced users who want to remote in, tail logs, or
+  script something. Off-by-default for typical use.
+- **Ethernet or WiFi** — both work out of the box via NetworkManager.
+- **Full SSD available** — single-partition install uses the entire drive
+  for the OS and your files.
+
+### Simple recovery
+
+- If something ever goes truly wrong with the panel software, **reflash the
+  same ISO** and you're back to a known-good state in ~10 minutes. No hours
+  of Windows repair tools, no "your system needs to be reset" that ends up
+  wiping your files anyway, no third-party recovery utilities.
+- Your G-code files can live on your network share or a USB stick — the
+  panel becomes just an appliance running against them, not a fragile
+  archive.
+
+### Security by omission
+
+- **No web browser installed.** No email client. No document editor. The
+  panel does one thing: run ncSenderPro. That means essentially zero
+  attack surface for the usual "someone clicked the wrong link" incidents
+  that plague Windows shop PCs.
+- No Windows telemetry, no Microsoft account requirement, no third-party
+  antivirus needed.
+
+### Free and non-locked-in
+
+- The OS itself is free — no subscription, no per-panel license.
+- Built on standard Debian — advanced users can `apt install` anything else
+  they want on the panel, or SSH in and tinker.
+- The source and build recipe for the OS are open — nothing here is a black
+  box you're stuck depending on.
+
+---
+
+## Quick facts
 
 - Boots the panel directly into **ncSenderPro** in kiosk mode (no login screen,
   no desktop, no browser)
 - Uses the full SSD for the OS + your files (single ext4 partition)
 - WiFi and Ethernet both work out of the box via NetworkManager
-- Touchscreen is auto-configured
+- Touchscreen is auto-configured with proper rotation
 - Root password is `ncsender` (SSH is available if you need it for advanced
   configuration; leaving it at default on a workshop network is fine)
 - Powers on straight into your controller UI every time — no clicks needed
