@@ -4,11 +4,22 @@ A purpose-built Debian-based operating system that turns the Sienci
 **gControl Panel** into a dedicated **ncSenderPro** kiosk — boots straight to
 ncSenderPro in full-screen touch mode, no desktop, no distractions.
 
+Think of it as turning the gControl Panel into a **dedicated CNC control PC**,
+similar in spirit to a **Masso Touch Panel** or a **Centroid AcornSix Touch
+Screen** — a single-purpose appliance for running your machine, not a general
+Windows PC.
+
 > [!CAUTION]
-> **This will erase everything on the gControl Panel's internal SSD.**
-> The Windows installation, the gSender application, all saved jobs, all
-> configuration, and your machine files stored on the panel — all of it will
-> be permanently wiped and replaced with ncSenderOS.
+> **This will erase everything on the gControl Panel's internal SSD** — the
+> Windows installation, the gSender application, all saved jobs, all
+> configuration, and every file stored on the panel. All of it will be
+> permanently wiped and replaced with ncSenderOS.
+>
+> **Back up anything you might want before you start.** Copy any G-code files,
+> job history, macros, tool tables, calibration data, saved settings, license
+> keys, and any personal files off the panel to an external drive or another
+> computer. Once the installer wipes the SSD, none of it is recoverable — not
+> by me, not by Sienci Labs, not by any recovery tool.
 >
 > Only install this if you have decided you are **permanently switching from
 > gSender to ncSenderPro**. Please read the [Before you install](#before-you-install)
@@ -149,3 +160,57 @@ reflash from a newer release (wipes the SSD again) or, for advanced users,
 - **ncSenderOS install / boot issues** — <https://github.com/siganberg/ncsenderos.gcontrol/issues>
 - **General discussion / Discord** — link in the ncSender manual:
   <https://docs.ncsender.com>
+
+---
+
+## Why this exists
+
+The Sienci gControl Panel is a nice piece of hardware — but out of the box
+it's a general-purpose Windows PC running gSender. For hobby users that's
+fine, but if you want the panel to behave more like a **Masso Touch Panel**
+or a **Centroid AcornSix Touch Screen** — power on, straight to your
+controller UI, no desktop, no updates interrupting you mid-job, no browser to
+maintain — a dedicated OS is a much better fit.
+
+There isn't a commercial appliance option for people who want to run
+ncSenderPro on the gControl Panel that way, so I built one. This project
+exists to give ncSender / ncSenderPro users the same "just works" appliance
+experience that Masso and Centroid customers get with their touch panels,
+without paying for or being locked into either of those ecosystems.
+
+I built and use this on my own machines. It's shared here so other CNC users
+who want the same thing don't have to reinvent it.
+
+---
+
+## Disclaimer
+
+**Use this software entirely at your own risk.**
+
+- I am an independent developer sharing this project as-is, in the hope that
+  it's useful. I am **not** affiliated with Sienci Labs, Masso, Centroid,
+  Microsoft, or any hardware vendor.
+- I am **not responsible** for any loss of data, loss of your Windows
+  installation, loss of your Windows license, loss of gSender configuration,
+  bricked hardware, voided warranties, missed deadlines, unfinished jobs,
+  ruined stock, damaged tooling, machine crashes, workshop injuries, or any
+  other direct or indirect damages resulting from installing or using this
+  software.
+- You are responsible for **backing up everything important** before you
+  install, and for confirming that ncSenderPro is what you want on this
+  hardware **before** you commit.
+- This software is provided **"AS IS", without warranty of any kind**,
+  express or implied, including but not limited to the warranties of
+  merchantability, fitness for a particular purpose, and noninfringement.
+  In no event shall the author be liable for any claim, damages, or other
+  liability, whether in an action of contract, tort, or otherwise, arising
+  from, out of, or in connection with the software or the use or other
+  dealings in the software.
+
+By downloading, flashing, and installing this image, you acknowledge that
+you have read and accept these terms, and that all consequences of the
+install — good or bad — are yours to own.
+
+If you are not comfortable with any of the above, **do not install it**.
+Use the free community version of ncSender on your existing Windows setup
+instead — same UI, same core features, zero risk to your panel.
