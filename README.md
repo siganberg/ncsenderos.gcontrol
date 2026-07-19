@@ -12,7 +12,7 @@ Windows PC.
 > [!IMPORTANT]
 > **This is a ncSenderPro appliance.** The OS bundles ncSenderPro and
 > requires a **ncSenderPro license** to activate. If you don't already own
-> ncSenderPro, get it here first: <https://www.franciscreation.com/ncsender-pro>.
+> ncSenderPro, get it here first: <https://www.franciscreation.com/ncsenderpro>.
 > If you're using the free community version of ncSender, this OS isn't for
 > you — try the community app on your existing Windows setup instead.
 
@@ -43,7 +43,7 @@ panel and see whether the workflow, UI, and machine control fit how you work,
 without touching your installation.
 
 - **Download ncSender (community)**: <https://github.com/siganberg/ncSender/releases>
-- **ncSender Pro** is the paid version — <https://www.franciscreation.com/ncsender-pro>
+- **ncSender Pro** is the paid version — <https://www.franciscreation.com/ncsenderpro>
 
 Confirm ncSenderPro is right for you *before* going any further. Going back to
 gSender/Windows after installing ncSenderOS is **not** a simple undo:
