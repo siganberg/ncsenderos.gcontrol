@@ -68,6 +68,40 @@ Windows first and try it there. You lose nothing by doing so.
 
 ---
 
+## Disclaimer
+
+**Use this software entirely at your own risk.**
+
+- I am an independent developer sharing this project as-is, in the hope that
+  it's useful. I am **not** affiliated with Sienci Labs, Masso, Centroid,
+  Microsoft, or any hardware vendor.
+- I am **not responsible** for any loss of data, loss of your Windows
+  installation, loss of your Windows license, loss of gSender configuration,
+  bricked hardware, voided warranties, missed deadlines, unfinished jobs,
+  ruined stock, damaged tooling, machine crashes, workshop injuries, or any
+  other direct or indirect damages resulting from installing or using this
+  software.
+- You are responsible for **backing up everything important** before you
+  install, and for confirming that ncSenderPro is what you want on this
+  hardware **before** you commit.
+- This software is provided **"AS IS", without warranty of any kind**,
+  express or implied, including but not limited to the warranties of
+  merchantability, fitness for a particular purpose, and noninfringement.
+  In no event shall the author be liable for any claim, damages, or other
+  liability, whether in an action of contract, tort, or otherwise, arising
+  from, out of, or in connection with the software or the use or other
+  dealings in the software.
+
+By downloading, flashing, and installing this image, you acknowledge that
+you have read and accept these terms, and that all consequences of the
+install — good or bad — are yours to own.
+
+If you are not comfortable with any of the above, **do not install it**.
+Use the free community version of ncSender on your existing Windows setup
+instead — same UI, same core features, zero risk to your panel.
+
+---
+
 ## Why choose ncSenderOS over the stock Windows setup
 
 The gControl Panel with stock Windows + gSender is a general-purpose PC that
@@ -227,6 +261,10 @@ non-gControl hardware are:
 
 ## Install instructions
 
+> By flashing and installing the ISO, you accept the terms in the
+> [Disclaimer](#disclaimer). If you haven't read it yet, please scroll up
+> and do so before continuing.
+
 You will need:
 
 - The gControl Panel (or a comparable Intel N100/N150 PC — see caveats
@@ -332,37 +370,3 @@ without paying for or being locked into either of those ecosystems.
 
 I built and use this on my own machines. It's shared here so other CNC users
 who want the same thing don't have to reinvent it.
-
----
-
-## Disclaimer
-
-**Use this software entirely at your own risk.**
-
-- I am an independent developer sharing this project as-is, in the hope that
-  it's useful. I am **not** affiliated with Sienci Labs, Masso, Centroid,
-  Microsoft, or any hardware vendor.
-- I am **not responsible** for any loss of data, loss of your Windows
-  installation, loss of your Windows license, loss of gSender configuration,
-  bricked hardware, voided warranties, missed deadlines, unfinished jobs,
-  ruined stock, damaged tooling, machine crashes, workshop injuries, or any
-  other direct or indirect damages resulting from installing or using this
-  software.
-- You are responsible for **backing up everything important** before you
-  install, and for confirming that ncSenderPro is what you want on this
-  hardware **before** you commit.
-- This software is provided **"AS IS", without warranty of any kind**,
-  express or implied, including but not limited to the warranties of
-  merchantability, fitness for a particular purpose, and noninfringement.
-  In no event shall the author be liable for any claim, damages, or other
-  liability, whether in an action of contract, tort, or otherwise, arising
-  from, out of, or in connection with the software or the use or other
-  dealings in the software.
-
-By downloading, flashing, and installing this image, you acknowledge that
-you have read and accept these terms, and that all consequences of the
-install — good or bad — are yours to own.
-
-If you are not comfortable with any of the above, **do not install it**.
-Use the free community version of ncSender on your existing Windows setup
-instead — same UI, same core features, zero risk to your panel.
