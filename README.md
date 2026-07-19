@@ -192,11 +192,45 @@ of the machine on your workbench, not the operating system.
 
 ---
 
+## Other Intel N100 / N150 PCs
+
+This is built and tested for the **Sienci gControl Panel**. But the gControl
+Panel is an Intel N100 mini PC, and there's a good chance the same image
+also works on other Intel **N100 or N150** mini PCs and touch panels — a lot
+of the "CNC control panel" boxes on the market use similar hardware inside.
+
+**No guarantees, though.** Different vendors tweak BIOS settings,
+touchscreens, WiFi chips, and boot behavior — something that works on the
+gControl might not work on yours. The most common trouble spots on
+non-gControl hardware are:
+
+- **Touchscreens** — some panels use non-standard controllers that need
+  extra drivers
+- **WiFi / Bluetooth chips** — some need vendor-specific firmware
+- **BIOS boot menus** — Secure Boot, CSM/Legacy settings, boot order
+
+**If you want to try it on other hardware:**
+
+1. Boot from the USB and make it all the way to the installer prompt
+   *before* you commit to installing anything. If the display comes up
+   wrong, the touchscreen is unresponsive, or the machine won't even boot
+   the USB, it's not going to magically work after installing — back out
+   at this point.
+2. Only proceed with the install if everything up to that prompt looks
+   right.
+3. **No support is provided for hardware I don't own.** If it works —
+   great, please share your experience in the [Discussions](https://github.com/siganberg/ncsenderos.gcontrol/discussions)
+   so other people with similar hardware know. If it doesn't work,
+   please don't open a bug report expecting a fix.
+
+---
+
 ## Install instructions
 
 You will need:
 
-- The gControl Panel
+- The gControl Panel (or a comparable Intel N100/N150 PC — see caveats
+  in the [previous section](#other-intel-n100--n150-pcs))
 - A **USB flash drive, 4 GB or larger** (its contents will be erased)
 - A separate computer to flash the USB — Windows, macOS, or Linux
 - A **USB keyboard** temporarily plugged into the panel during install
